@@ -1,0 +1,267 @@
+/* CSS Document */
+@media (min-width: 375px) {
+  .cta_btn.btn-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .cta_btn.btn-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    min-height: 30rem;
+  }
+
+  .hero-img::before {
+    background-size: 67%;
+  }
+
+  .features-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature-body {
+    flex: 1 0 47.6%;
+  }
+
+  .mp {
+    margin: 1% 0 1% 1.6%;
+    padding: 1%;
+  }
+
+  .article-card {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .social-media ul {
+    justify-content: flex-start;
+  }
+
+  .social-media {
+    padding: 60px 0px 0px 0px;
+  }
+
+  .footer-left {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-left-content {
+    flex: 1;
+  }
+
+  .footer-nav-links {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .footer-nav-link:nth-child(1) {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger__container {
+    display: none;
+  }
+
+  .cta_btn.btn-desktop {
+    display: block;
+  }
+
+  .nav_links {
+    display: block;
+  }
+
+  .nav_links {
+    visibility: visible;
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: initial;
+    width: initial;
+    border-radius: initial;
+    background-color: var(--White);
+    animation: none;
+  }
+
+  .nav_links > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+  }
+
+  .nav_links li:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .nav_link:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .nav_link:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .nav_link > a {
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--Grayish-Blue);
+    transition: color 300ms;
+  }
+
+  .nav_link > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.95rem;
+    background: linear-gradient(
+      to right,
+      var(--Lime-Green),
+      var(--Bright-Cyan)
+    );
+    display: block;
+    height: 5px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  .nav_link > a:hover::after {
+    opacity: 1;
+  }
+
+  .hero .container {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    height: 41rem;
+    position: relative;
+  }
+
+  .hero-img {
+    flex: 2;
+    height: 100%;
+    background-image: none;
+  }
+
+  .hero-img::before {
+    background: url("../img/bg-intro-desktop.svg") no-repeat;
+    background-size: 122%;
+    width: 150%;
+    left: 9%;
+    background-position: 0% 65%;
+  }
+
+  .hero-img::after {
+    background: url("../img/image-mockups.png") no-repeat;
+    background-size: 90%;
+    left: 26%;
+    height: 126%;
+    width: 120%;
+    background-position: center 105%;
+  }
+
+  .hero-info {
+    flex: 1;
+    text-align: left;
+  }
+
+  .hero-info h1 {
+    font-size: 3rem;
+  }
+
+  .hero-info p {
+    width: 21.5rem;
+  }
+
+  .features {
+    text-align: left;
+  }
+
+  .features-card {
+    display: flex;
+  }
+
+  .feature-body {
+    flex: 1 0 23.8%;
+    padding: 1% 1% 1% 0;
+  }
+
+  .feature-body:not(:first-child) {
+    margin: 0 0 0 1.6%;
+  }
+
+  .mp {
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature-icon {
+    margin: initial;
+  }
+
+  .features h2 {
+    font-size: 35px;
+  }
+
+  .features p br {
+    display: block;
+  }
+
+  .article-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .article-body{
+    transition: transform 300ms ease-in-out;    
+  }
+
+  .article-body:hover {
+    transform: scale(1.05);
+}
+
+  .footer-container {
+    display: flex;
+  }
+
+  .footer-left {
+    flex: 2;
+  }
+
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+
+  .footer_cta {
+    margin-top: 0;
+}
+
+.footer-left-content {
+  flex: 0;
+}
+}
+
+@media (min-width: 1440px) {
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  auto grid layout*/
+}
